@@ -1,0 +1,23 @@
+
+<view class="zhg-detail-view-container">
+    <image class="zgh-detail-image-primaryImage" src="{{isPlayMusic?data.music.coverImgUrl:data.detail_img}}"></image>
+    <image catchtap='zgh_detailse_catchtap_isPlayMusic' class="zgh-detail-image-musicIcon" src="{{isPlayMusic?'/images/music/music-start.png':'/images/music/music-stop.png'}}"></image>
+    <view class="zgh-detail-view-smallTitle">
+        <image src="{{data.avatar}}"></image>
+        <text>{{data.author}}</text>
+        <text>发布于</text>
+        <text>{{data.date}}</text>
+    </view>
+    <text class="zgh-detail-text-title">{{data.title}}</text>
+    <view class="zgh-detail-view-icon">
+        <view>
+            <image wx:if='{{isCollection}}' catchtap='zgh_details_catchtap_handleCollection' src="/images/icon/collection.png"></image>
+            <image wx:else='{{isCollection}}' catchtap='zgh_details_catchtap_handleCollection'  src="/images/icon/collection-anti.png"></image>
+            <image src="/images/icon/share-anti.png"></image>
+        </view>
+        <view class="zgh-detail-view-splitLine"></view>
+    </view>
+    <text class="zgh-detail-text-content">{{data.detail_content}}</text>
+    <!-- 分享文章只要设置一个 open-type="share" 其他都不用设置了，底层封装好了 -->
+    <button open-type='share' class="zgh-detail-button-shareArticle">转发此文章</button>
+</view>

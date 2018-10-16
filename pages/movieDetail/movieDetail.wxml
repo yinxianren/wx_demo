@@ -1,0 +1,10 @@
+<view class="zgh-view-container">
+    <image class="zgh-image-primaryImg" src="{{movie.images.large}}"></image>
+    <text class="zgh-text-title">{{movie.title}}</text>
+    <view class="zgh-view-detail">
+        <text class="grade">评分：{{movie.rating.average}}</text>
+        <text class="director">导演：{{movie.directors[0].name}}</text>
+        <text calss="cats">主演：{{movie.casts[0].name}} {{movie.casts[1].name}} {{movie.casts[2].name}}</text>
+    </view>
+    <button class="zgh-button-gotoWatching">我要观看</button>
+</view>

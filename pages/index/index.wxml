@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<view class="body"><!-- 类似div-->
+  <image class="head-portrait" src='{{userInfo.avatarUrl}}'></image>
+  <text class="welcome-word">Hello {{userInfo.nickName}}</text>
+  <view class="into-project" catch:touchstart='changeBackgroundOnTouchstart' catch:touchend='changeBackgroundOnTouchchend'    style=" background-color:{{intoProjectbackgroundColor}};" >
+     <text >进入程序</text>
+  </view>
+  <button  bindgetuserinfo='handleBindgetuserinfo' style="display:{{tabDisplay.authButtom?'none':'block'}};"class='getUserInfoButton' open-type='getUserInfo'>获取用户授权</button>
+</view>

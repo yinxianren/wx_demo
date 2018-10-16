@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/movies/movie",
+    "pages/details/details",
+    "pages/movieDetail/movieDetail",
+    "pages/list/list"
+    
+   
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#94E03C",
+    "navigationBarTitleText": "今识瑞网络科技",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "文字与阅读",
+        "iconPath": "/images/tab/yuedu.png",
+        "selectedIconPath": "/images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/movies/movie",
+        "text": "电影频道",
+        "iconPath": "/images/tab/dianying.png",
+        "selectedIconPath": "/images/tab/dianying_hl.png"
+      }
+    ]
+  }
+}

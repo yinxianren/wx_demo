@@ -1,0 +1,42 @@
+/* pages/index/index.wxss */
+page{ /* page标签是系统自动生成最外围的标签 */
+  height:100%;
+   background-color:#EFEFEF;
+}
+.body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.head-portrait{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius:100rpx;
+  margin: 100rpx 0;
+}
+
+.welcome-word{
+  font-size: 36rpx;
+  font-weight:bold;
+  color:#333333;
+  margin:50rpx;
+}
+
+.into-project{
+  width: 200rpx;
+  height: 80rpx;
+  font-size:38rpx;
+  text-align: center;
+  line-height:80rpx;
+  border: 1rpx solid #3385FF;
+  border-radius:10rpx;
+  color:white;
+  margin-top:100rpx;
+}
+
+.getUserInfoButton{
+  margin-top: 200rpx;
+  border-radius:10rpx;
+}

@@ -1,0 +1,11 @@
+<navigator url="/pages/movieDetail/movieDetail?index={{index}}" wx:for="{{movies}}" wx:key="{{index}}">
+    <view class="zgh-movie-view-container">
+        <image class="zgh-movie-image-movieImg" src="{{item.images.large}}"></image>
+        <view class="zgh-movie-view-movieDetail">
+            <text class="name">{{item.title}}</text>
+            <text calss="year">年份：{{item.year}}</text>
+            <text class="director">导演：{{item.directors[0].name}}</text>
+        </view>
+        <text class="zgh-movie-text-grade">{{item.rating.average}}</text>
+    </view>
+</navigator>

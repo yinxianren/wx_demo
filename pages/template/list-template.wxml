@@ -1,0 +1,22 @@
+<template name="listTemplate">
+    <view class="temp-container">
+        <view class="temp-split"></view>
+        <view class="temp-head">
+            <image  src="{{item.avatar}}"></image>
+            <text>{{date}}</text>
+        </view>
+        <text class="temp-title">{{item.title}}</text>
+        <image catchtap='zgh_list_catchtap_gotoDetails' data-postId="{{item.postId}}" class="temp-primary-img" src="{{item.detail_img}}"></image>
+        <text class="temp-primary-text">{{item.detail_content}}</text>
+        <view class="temp-end-view">
+            <image src="{{item.detail_love_image1}}"></image>
+            <text>{{love_count}}</text>
+            <image src="{{item.detail_love_image2}}"></image>
+            <text>{{attention_count}}</text>
+        </view>
+    </view>
+</template>
+
+
+
+

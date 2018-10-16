@@ -1,0 +1,24 @@
+<import src="/pages/template/list-template.wxml"></import>
+<view>
+ <swiper catchtap='zgh_list_catchtop_gotoTargetPage' indicator-dots indicator-color='#fff' indicator-active-color='#ff461f' autoplay>
+   <swiper-item>
+     <image  data-index='1' src='/images/detail/carousel/01.jpg'> </image>
+   </swiper-item>
+   <swiper-item>
+     <image data-index='0' src='/images/detail/carousel/02.jpg'> </image>
+   </swiper-item>
+   <swiper-item>
+     <image data-index='2' src='/images/detail/carousel/03.jpg'> </image>
+   </swiper-item>
+   <swiper-item>
+     <image data-index='3' src='/images/detail/list/j2.jpg'> </image>
+   </swiper-item>
+ </swiper>
+  <block wx:for="{{listDatas}}" wx:key="{{index}}">
+    <view >
+      <template is="listTemplate" data="{{item}}"></template>
+    </view>
+  </block>
+
+
+</view>
